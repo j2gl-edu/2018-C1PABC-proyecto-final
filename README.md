@@ -1,6 +1,6 @@
 # Proyecto Final
 
-Descripción detallada [Proyecto Final](./final-project.md)
+Descripción detallada del [Proyecto Final](./final-project.md)
 
 ## Required
 
@@ -13,5 +13,7 @@ mvnw clean package
 ```
 ## Run
 ```sh
-
+java -jar target/rpn-calculator-1.0.0.jar
 ```
+
+Go to http://localhost:8080/calculator
