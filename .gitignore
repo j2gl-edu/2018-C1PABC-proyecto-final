@@ -1,5 +1,4 @@
-target/
-tmep/
+temp/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### Eclipse
