@@ -48,7 +48,7 @@ Las expresiones en notación polaca inversa, se ingresaran separadas por espacio
     * **Expresion:** `3 2 1.5 * 3 / *`
     * **Resultado:** `3`
 * Ejemplo 5
-    * **Expresion:** `15 7 1 1 + − ÷ 3 × 2 1 1 + + −`
+    * **Expresion:** `15 7 1 1 + - / 3 * 2 1 1 + + -`
     * **Resultado:** `5`
 
 
