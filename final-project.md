@@ -4,6 +4,7 @@
 * **Código** 2018-C1PABC
 * **Ciclo** 2-2018
 * **Sección** C
+* **Fecha de Entrega** 29 de Septiembre 2018
 
 ## Objetivos:
 
