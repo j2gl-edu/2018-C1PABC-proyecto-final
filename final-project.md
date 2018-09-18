@@ -19,11 +19,11 @@ El alumno adquiera los siguientes conocimientos:
 
 ## Descripción:
 
-Se debe de realizar una calculadora en notación polaca inversa que guarde historial, este debe de poder desplegarse ordenado conforme su ingreso del mas nuevo al mas antiguo y otra por expresión.  Para esto se tienen dos opciones, 
-1. Opcion 1: realizarlo en la línea de comando / consola 
-2. Opcion 2: Una aplicación de tipo REST API
+Se debe de realizar una calculadora en notación polaca inversa que guarde historial, este debe de poder desplegarse ordenado conforme su ingreso del mas nuevo al mas antiguo y otra por expresión (alfabéticamente).  Para esto se tienen dos opciones, 
+1. Opción 1: realizarlo en la línea de comando / consola 
+2. Opción 2: Una aplicación de tipo REST API
 
-En el case de API REST, se le solicita al estudiante que exponga un URI para resolver las operaciones aritméticas básicas exponiendo un recurso, donde por llamada `POST` se mandará la expersión y se devolvera un resultado.
+En el caso del la opción 2 (REST API), se le solicita al estudiante que exponga un URI para resolver las operaciones aritméticas básicas exponiendo un recurso, donde por llamada `POST` se mandará la expersión y se devolvera un resultado.
 
 ## Expresiones RPN
 
@@ -57,8 +57,7 @@ Las expresiones en notación polaca inversa, se ingresaran separadas por espacio
 
 URL: http://localhost:8080/calculator
 
-La cual deberá devolver al navegador el resultado de la operación proveída,
-la cual será una expresión aritmética expresada en notación polaca inversa, aceptando únicamente números y símbolos de operadores separados por espacios.
+El recurso deberá devolver al navegador el resultado evaluado de la expresión proveída.   Esta expresión aritmética estará expresada en notación polaca inversa, aceptando únicamente números y símbolos de operadores (+, -, * y /) separados por espacios.
 
 #### Calculate an expression [POST]
 
@@ -102,9 +101,9 @@ Expresion: 3 2 +
 
 URL: http://localhost:8080/history
 
-Mostrara en el navegador el array de historial de operaciones segun el orden en que se ejecutaron (del mas nuevo al mas antiguo).
+Mostrara en el navegador el arreglo de historial de operaciones según el orden en que se ejecutaron (del mas nuevo al mas antiguo).
 
-Si se agrega el paraemtro order-by=experssion, entonces se debe de ordenar por expresión.
+Sí se agrega el parámetro `order-by=experssion`, entonces se debe de ordenar por expresión.
 
 http://localhost:8080/history/?order-by=expression
 
@@ -112,15 +111,15 @@ http://localhost:8080/history/?order-by=expression
 
 
 ## Calificación
-* Funcionalidad del proyecto: 					
-    * Resolucion de expresion   50 pts
-    * Historial				
+* Funcionalidad del proyecto:
+    * Resolución de expresión   50 pts
+    * Historial
         * Orden ascendente	    15 pts
-        * Orden alfabetico	    15 pts
+        * Orden alfabético	    15 pts
     * Manejo de errores         10pts
-* Documentacion		 					
-    * Tecnica (javadoc)	        5pts
-    * de usuario (markdown)		5pts
+* Documentación
+    * Técnica (javadoc)	        5pts
+    * De usuario (markdown)		5pts
 * **Total**                     100 pts
 
 ## Referencias

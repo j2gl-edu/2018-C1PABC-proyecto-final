@@ -1,14 +1,16 @@
 package edu.advanced.rpncalculator.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
 import edu.advanced.rpncalculator.model.RequestExpression;
 import edu.advanced.rpncalculator.model.ResultResponse;
 import edu.advanced.rpncalculator.service.Calculator;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Optional;
 
 @RestController
 public class CalculatorController {
@@ -35,4 +37,15 @@ public class CalculatorController {
         response.setResult("Please use POST method");
         return response;
     }
+
+    @GetMapping("/history")
+    @ResponseBody
+    public String[] getHistory(@RequestParam("order-by") Optional<String> orderBy) {
+        System.out.println("Order by: " + orderBy);
+        if (orderBy.isPresent()) {
+            return calculator.getSortedHistory();
+        }
+        return calculator.getHistory();
+    }
+
 }
