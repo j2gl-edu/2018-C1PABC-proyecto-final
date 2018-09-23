@@ -41,7 +41,6 @@ public class CalculatorController {
     @GetMapping("/history")
     @ResponseBody
     public String[] getHistory(@RequestParam("order-by") Optional<String> orderBy) {
-        System.out.println("Order by: " + orderBy);
         if (orderBy.isPresent()) {
             return calculator.getSortedHistory();
         }
