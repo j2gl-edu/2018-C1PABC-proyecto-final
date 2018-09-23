@@ -18,14 +18,18 @@ On Windows
 mvnw.cmd clean package
 ```
 ## Run
+You can run your project by any of the following commands
 ```sh
+mvn spring-boot:run
+mvnw.cmd spring-boot:run
 java -jar target/rpn-calculator-1.0.0.jar
 ```
+
 
 ## Testing
 
 ### Method 1
-Use Postman http://localhost:8080/calculator
+Go to http://localhost:8080/web/calculator
 
 ### Method 2
 In the command line
@@ -39,4 +43,4 @@ curl -X POST \
 ```
 
 ### Method 3
-Go to http://localhost:8080/web/calculator
+Use Postman http://localhost:8080/calculator
