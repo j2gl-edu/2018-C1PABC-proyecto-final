@@ -1,4 +1,5 @@
 temp/
+.DS_Store
 !.mvn/wrapper/maven-wrapper.jar
 
 ### Eclipse
